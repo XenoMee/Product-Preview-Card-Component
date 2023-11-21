@@ -26,7 +26,8 @@ p{
     border-radius: 0.5rem;
 }
 
-.card > img {
+
+.card .card-image > img {
     width: 100%;
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
@@ -79,7 +80,7 @@ p{
     display: inline-block;
     position: absolute;
     top: 2rem;
-    left: 8rem;
+    left: 9rem;
     font-size: 0.8rem;
     text-decoration: line-through;
 }
@@ -88,12 +89,12 @@ p{
     position: relative;
     margin-top: 1rem;
     padding: 0.9rem 6.07rem;
+    width: max-content;
     font-family: 'Montserrat', sans-serif;
     background-color:hsl(158, 36%, 37%) ;
     color: white;
     border: none;
     border-radius: 0.5rem;
-    overflow: hidden;
 }
 
 .body-card-cart-button > img {
@@ -120,10 +121,14 @@ p{
         height: 27.6em;
     }
 
-    .card > img{
+    .card-image{
+        height: 27.6em;
+    }
+
+    .card .card-image > img{
         content: url("./images/image-product-desktop.jpg");
-        height: 100%;
         width: 100%;
+        height: 100%;
         border-top-right-radius: 0;
         border-bottom-left-radius: 0.5em;
         overflow: hidden;
