@@ -50,6 +50,7 @@ p{
     margin-top: 0.5rem;
     width: 15rem;
     font-family: 'Fraunces', serif;
+    color: hsl(212, 21%, 14%);
     font-size: 1.9rem;
     line-height: 1;
 }
@@ -108,4 +109,55 @@ p{
 }
 .attribution a {
     color: hsl(228, 45%, 44%); 
+}
+
+@media (min-width: 40em) {
+    .card{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr auto;
+        width: 40em;
+        height: 27.6em;
+    }
+
+    .card > img{
+        content: url("./images/image-product-desktop.jpg");
+        height: 100%;
+        width: 100%;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 0.5em;
+        overflow: hidden;
+    }
+
+    .body-card{
+        padding: 1.8em 2em;
+    }
+
+    .body-card-name{
+        width: 7.5em;
+        font-size: 2.2em;
+        margin-top: 0.5em;
+    }
+
+    .body-card-text{
+        margin-top: 2em;
+        width: 17em;
+    }
+
+    .body-card-discount-text{
+        left: 11.3em;
+    }
+
+    .body-card-cart-button{
+        margin-top: 2em;
+        padding: 1.3em 6.8em;
+    }
+
+    .body-card-cart-button:active{
+        background-color: hsl(158, 36%, 20%);
+    }
+
+    .body-card-cart-button > img{
+        left: 4.7em;
+    }
 }
