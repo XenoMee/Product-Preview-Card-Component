@@ -1,9 +1,109 @@
+body{
+    background-color: hsl(30, 38%, 92%);
+    margin: 0;
+}
 
+p{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+    font-size: 1rem;
+    line-height: 1.5;
+}
 
+.content{
+    height: 100svh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.card{
+    width: 20rem;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0.5rem;
+}
+
+.card > img {
+    width: 100%;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    object-fit: cover;
+}
+
+.body-card{
+    padding: 1rem 1.5rem;
+    height: 19.5rem;
+    text-align: start;
+}
+
+.body-card-title{
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    font-size: 0.8rem;
+}
+
+.body-card-name{
+    margin: 0;
+    margin-top: 0.5rem;
+    width: 15rem;
+    font-family: 'Fraunces', serif;
+    font-size: 1.9rem;
+    line-height: 1;
+}
+
+.body-card-text{
+    margin-top: 1rem;
+    width: 17.1rem;
+    font-size: 0.82rem;
+}
+
+.body-card-price{
+    position: relative;
+}
+
+.body-card-price-text{
+    margin: 0;
+    display: inline-block;
+    font-family: 'Fraunces', serif;
+    margin-top: 1.3rem;
+    color: hsl(158, 36%, 37%);
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.body-card-discount-text{
+    display: inline-block;
+    position: absolute;
+    top: 2rem;
+    left: 8rem;
+    font-size: 0.8rem;
+    text-decoration: line-through;
+}
+
+.body-card-cart-button{
+    position: relative;
+    margin-top: 1rem;
+    padding: 0.9rem 6.07rem;
+    font-family: 'Montserrat', sans-serif;
+    background-color:hsl(158, 36%, 37%) ;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.body-card-cart-button > img {
+    position: absolute;
+    width: 1rem;
+    left: 4.3rem;
+}
 
 .attribution { 
-    font-size: 11px; 
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem; 
     text-align: center; 
 }
 .attribution a {
