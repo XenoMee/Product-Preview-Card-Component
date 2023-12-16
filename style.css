@@ -1,26 +1,25 @@
 *, *::after, *::before{
     box-sizing: border-box;
+    margin-top: 0;
 } 
 
 body{
     background-color: hsl(30, 38%, 92%);
+    line-height: 1.5;
     margin: 0;
 }
 
-p{
-    margin: 0;
+.body-card-category,
+.body-card-text,
+.body-card-discount-text{
     font-family: 'Montserrat', sans-serif;
     color: hsl(228, 12%, 48%);
-    font-size: 1rem;
-    line-height: 1.5;
 }
 
 .content{
-    height: 100svh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    min-height: 100svh;
+    display: grid;
+    place-items: center;
 }
 
 .card{
@@ -43,18 +42,22 @@ p{
     text-align: start;
 }
 
-.body-card-title{
+.body-card-category{
     display: inline-block;
     text-transform: uppercase;
     letter-spacing: 0.3rem;
     font-size: 0.8rem;
 }
 
+.body-card-name,
+.body-card-price{
+    font-family: 'Fraunces', serif;
+}
+
 .body-card-name{
     margin: 0;
     margin-top: 0.5rem;
     width: 15rem;
-    font-family: 'Fraunces', serif;
     color: hsl(212, 21%, 14%);
     font-size: 1.9rem;
     line-height: 1;
@@ -71,12 +74,7 @@ p{
 }
 
 .body-card-price-text{
-    margin: 0;
-    display: inline-block;
-    font-family: 'Fraunces', serif;
-    margin-top: 1.3rem;
     color: hsl(158, 36%, 37%);
-    font-weight: 700;
     font-size: 2rem;
 }
 
