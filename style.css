@@ -13,7 +13,8 @@ body {
 
 .body-card-category,
 .body-card-text,
-.body-card-discount-text {
+.body-card-discount-text,
+.body-card-cart-button {
   font-family: "Montserrat", sans-serif;
   color: hsl(228, 12%, 48%);
 }
@@ -68,6 +69,7 @@ body {
   justify-content: start;
   align-items: center;
   gap: 1rem;
+  margin-bottom: 1rem;
 }
 
 .body-card-price-text {
@@ -82,31 +84,25 @@ body {
 }
 
 .body-card-cart-button {
-  position: relative;
-  margin-top: 1rem;
-  padding: 0.9rem 6.07rem;
-  width: max-content;
-  font-family: "Montserrat", sans-serif;
+  display: block;
+  padding: 0.6rem;
   background-color: hsl(158, 36%, 37%);
   color: white;
+  text-align: center;
   font-weight: 700;
-  border: none;
+  text-decoration: none;
   border-radius: 0.5rem;
-}
-
-.body-card-cart-button > img {
-  position: absolute;
-  width: 1rem;
-  left: 4.3rem;
+  margin-bottom: 0.5rem;
 }
 
 .attribution {
   margin-bottom: 0.5rem;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   text-align: center;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: hsl(158, 36%, 37%);
+  font-weight: 700;
 }
 
 @media (min-width: 40em) {
