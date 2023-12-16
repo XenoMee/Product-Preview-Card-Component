@@ -60,13 +60,14 @@ body {
 }
 
 .body-card-text {
-  margin-top: 1rem;
-  width: 17.1rem;
-  font-size: 0.82rem;
+  font-size: 0.81rem;
 }
 
 .body-card-price {
-  position: relative;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
 }
 
 .body-card-price-text {
@@ -75,12 +76,9 @@ body {
 }
 
 .body-card-discount-text {
-  display: inline-block;
-  position: absolute;
-  top: 2rem;
-  left: 9rem;
   font-size: 0.8rem;
   text-decoration: line-through;
+  margin-bottom: 0;
 }
 
 .body-card-cart-button {
