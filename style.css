@@ -1,171 +1,167 @@
-*, *::after, *::before{
-    box-sizing: border-box;
-    margin-top: 0;
-} 
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin-top: 0;
+}
 
-body{
-    background-color: hsl(30, 38%, 92%);
-    line-height: 1.5;
-    margin: 0;
+body {
+  background-color: hsl(30, 38%, 92%);
+  line-height: 1.5;
+  margin: 0;
 }
 
 .body-card-category,
 .body-card-text,
-.body-card-discount-text{
-    font-family: 'Montserrat', sans-serif;
-    color: hsl(228, 12%, 48%);
+.body-card-discount-text {
+  font-family: "Montserrat", sans-serif;
+  color: hsl(228, 12%, 48%);
 }
 
-.content{
-    min-height: 100svh;
-    display: grid;
-    place-items: center;
+.content {
+  min-height: 100svh;
+  display: grid;
+  place-items: center;
 }
 
-.card{
-    width: 20rem;
-    height: 37.5rem;
-    background-color: hsl(0, 0%, 100%);
-    border-radius: 0.5rem;
+.card {
+  width: 20rem;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 0.5rem;
 }
 
-
-.card .card-image > img {
-    width: 100%;
-    border-top-left-radius: 0.5rem;
-    border-top-right-radius: 0.5rem;
-    object-fit: cover;
+.main-image {
+  max-width: 100%;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  object-fit: cover;
 }
 
-.body-card{
-    padding: 1rem 1.5rem;
-    text-align: start;
+.body-card {
+  padding: 1rem 1.5rem;
+  text-align: start;
 }
 
-.body-card-category{
-    display: inline-block;
-    text-transform: uppercase;
-    letter-spacing: 0.3rem;
-    font-size: 0.8rem;
+.body-card-category {
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  font-size: 0.8rem;
 }
 
 .body-card-name,
-.body-card-price{
-    font-family: 'Fraunces', serif;
+.body-card-price {
+  font-family: "Fraunces", serif;
 }
 
-.body-card-name{
-    margin: 0;
-    margin-top: 0.5rem;
-    width: 15rem;
-    color: hsl(212, 21%, 14%);
-    font-size: 1.9rem;
-    line-height: 1;
+.body-card-name {
+  color: hsl(212, 21%, 14%);
+  font-size: 1.6rem;
+  line-height: 1;
 }
 
-.body-card-text{
-    margin-top: 1rem;
-    width: 17.1rem;
-    font-size: 0.82rem;
+.body-card-text {
+  margin-top: 1rem;
+  width: 17.1rem;
+  font-size: 0.82rem;
 }
 
-.body-card-price{
-    position: relative;
+.body-card-price {
+  position: relative;
 }
 
-.body-card-price-text{
-    color: hsl(158, 36%, 37%);
-    font-size: 2rem;
+.body-card-price-text {
+  color: hsl(158, 36%, 37%);
+  font-size: 2rem;
 }
 
-.body-card-discount-text{
-    display: inline-block;
-    position: absolute;
-    top: 2rem;
-    left: 9rem;
-    font-size: 0.8rem;
-    text-decoration: line-through;
+.body-card-discount-text {
+  display: inline-block;
+  position: absolute;
+  top: 2rem;
+  left: 9rem;
+  font-size: 0.8rem;
+  text-decoration: line-through;
 }
 
-.body-card-cart-button{
-    position: relative;
-    margin-top: 1rem;
-    padding: 0.9rem 6.07rem;
-    width: max-content;
-    font-family: 'Montserrat', sans-serif;
-    background-color:hsl(158, 36%, 37%) ;
-    color: white;
-    font-weight: 700;
-    border: none;
-    border-radius: 0.5rem;
+.body-card-cart-button {
+  position: relative;
+  margin-top: 1rem;
+  padding: 0.9rem 6.07rem;
+  width: max-content;
+  font-family: "Montserrat", sans-serif;
+  background-color: hsl(158, 36%, 37%);
+  color: white;
+  font-weight: 700;
+  border: none;
+  border-radius: 0.5rem;
 }
 
 .body-card-cart-button > img {
-    position: absolute;
-    width: 1rem;
-    left: 4.3rem;
+  position: absolute;
+  width: 1rem;
+  left: 4.3rem;
 }
 
-.attribution { 
-    margin-bottom: 0.5rem;
-    font-size: 0.8rem; 
-    text-align: center; 
+.attribution {
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+  text-align: center;
 }
 .attribution a {
-    color: hsl(228, 45%, 44%); 
+  color: hsl(228, 45%, 44%);
 }
 
 @media (min-width: 40em) {
-    .card{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr auto;
-        width: 40em;
-        height: 27.6em;
-    }
+  .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto;
+    width: 40em;
+    height: 27.6em;
+  }
 
-    .card-image{
-        height: 27.6em;
-    }
+  .card-image {
+    height: 27.6em;
+  }
 
-    .card .card-image > img{
-        content: url("./images/image-product-desktop.jpg");
-        width: 100%;
-        height: 100%;
-        border-top-right-radius: 0;
-        border-bottom-left-radius: 0.5em;
-        overflow: hidden;
-    }
+  .card .card-image > img {
+    content: url("./images/image-product-desktop.jpg");
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0.5em;
+    overflow: hidden;
+  }
 
-    .body-card{
-        padding: 1.8em 2em;
-    }
+  .body-card {
+    padding: 1.8em 2em;
+  }
 
-    .body-card-name{
-        width: 7.5em;
-        font-size: 2.2em;
-        margin-top: 0.5em;
-    }
+  .body-card-name {
+    width: 7.5em;
+    font-size: 2.2em;
+    margin-top: 0.5em;
+  }
 
-    .body-card-text{
-        margin-top: 2em;
-        width: 17em;
-    }
+  .body-card-text {
+    margin-top: 2em;
+    width: 17em;
+  }
 
-    .body-card-discount-text{
-        left: 11.3em;
-    }
+  .body-card-discount-text {
+    left: 11.3em;
+  }
 
-    .body-card-cart-button{
-        margin-top: 2em;
-        padding: 1.3em 6.8em;
-    }
+  .body-card-cart-button {
+    margin-top: 2em;
+    padding: 1.3em 6.8em;
+  }
 
-    .body-card-cart-button:active{
-        background-color: hsl(158, 36%, 20%);
-    }
+  .body-card-cart-button:active {
+    background-color: hsl(158, 36%, 20%);
+  }
 
-    .body-card-cart-button > img{
-        left: 4.7em;
-    }
+  .body-card-cart-button > img {
+    left: 4.7em;
+  }
 }
