@@ -85,7 +85,10 @@ body {
 }
 
 .body-card-cart-button {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
   padding: 0.6rem;
   background-color: hsl(158, 36%, 37%);
   color: white;
@@ -146,7 +149,8 @@ body {
   }
 
   .body-card-cart-button{
-    padding: 1rem;
+    padding: 0.8em;
+    margin-bottom: 0;
   }
 
   .body-card-cart-button:active {
