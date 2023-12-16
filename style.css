@@ -26,6 +26,7 @@ body {
 }
 
 .card {
+    display: grid;
   width: 20rem;
   background-color: hsl(0, 0%, 100%);
   border-radius: 0.5rem;
@@ -108,54 +109,48 @@ body {
 @media (min-width: 40em) {
   .card {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
     width: 40em;
-    height: 27.6em;
   }
 
-  .card-image {
-    height: 27.6em;
-  }
-
-  .card .card-image > img {
+  .main-image {
     content: url("./images/image-product-desktop.jpg");
-    width: 100%;
-    height: 100%;
     border-top-right-radius: 0;
     border-bottom-left-radius: 0.5em;
-    overflow: hidden;
   }
 
   .body-card {
-    padding: 1.8em 2em;
+    padding: 1.5rem 2rem;
+  }
+
+  .body-card-category{
+    font-size: 1rem;
   }
 
   .body-card-name {
-    width: 7.5em;
-    font-size: 2.2em;
-    margin-top: 0.5em;
+    font-size: 2.3rem;
   }
 
-  .body-card-text {
-    margin-top: 2em;
-    width: 17em;
+  .body-card-text{
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
   }
 
-  .body-card-discount-text {
-    left: 11.3em;
+  .body-card-price{
+    margin-bottom: 1.5rem;
   }
 
-  .body-card-cart-button {
-    margin-top: 2em;
-    padding: 1.3em 6.8em;
+  .body-card-discount-text{
+    font-size: 0.9rem
+  }
+
+  .body-card-cart-button{
+    padding: 1rem;
   }
 
   .body-card-cart-button:active {
     background-color: hsl(158, 36%, 20%);
   }
 
-  .body-card-cart-button > img {
-    left: 4.7em;
-  }
 }
