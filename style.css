@@ -140,3 +140,10 @@ body {
   align-items: center;
   gap: var(--content-spacing);
 }
+
+@media (min-width: 50em) {
+  .product {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
