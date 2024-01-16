@@ -26,7 +26,7 @@ body {
 }
 
 .card {
-    display: grid;
+  display: grid;
   width: 20rem;
   background-color: hsl(0, 0%, 100%);
   border-radius: 0.5rem;
@@ -99,21 +99,10 @@ body {
   margin-bottom: 0.5rem;
 }
 
-.attribution {
-  margin-bottom: 0.5rem;
-  font-size: 0.9rem;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(158, 36%, 37%);
-  font-weight: 700;
-}
-
 @media (min-width: 40em) {
   .card {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
     width: 40em;
   }
 
@@ -127,7 +116,7 @@ body {
     padding: 1.5rem 2rem;
   }
 
-  .body-card-category{
+  .body-card-category {
     font-size: 1rem;
   }
 
@@ -135,20 +124,20 @@ body {
     font-size: 2.3rem;
   }
 
-  .body-card-text{
+  .body-card-text {
     font-size: 1rem;
     margin-bottom: 1.5rem;
   }
 
-  .body-card-price{
+  .body-card-price {
     margin-bottom: 1.5rem;
   }
 
-  .body-card-discount-text{
-    font-size: 0.9rem
+  .body-card-discount-text {
+    font-size: 0.9rem;
   }
 
-  .body-card-cart-button{
+  .body-card-cart-button {
     padding: 0.8em;
     margin-bottom: 0;
   }
@@ -156,5 +145,4 @@ body {
   .body-card-cart-button:active {
     background-color: hsl(158, 36%, 20%);
   }
-
 }
