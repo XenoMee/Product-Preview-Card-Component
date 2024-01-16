@@ -110,7 +110,6 @@ body {
 }
 
 .button {
-  display: inline-flex;
   padding: 0.7rem 1.45rem;
   background-color: var(--clr-primary-600);
   color: var(--clr-neutral-100);
@@ -118,13 +117,18 @@ body {
   font-weight: var(--fw-bold);
   border: none;
   border-radius: 0.5rem;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
 }
 
 .button[data-icon="shopping-cart"]:before {
   content: "";
+  background-image: url("./images/icon-cart.svg");
   width: 0.9375rem;
   height: 1rem;
-  background: red;
 }
 
 /* Utility classes */
