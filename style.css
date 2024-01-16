@@ -143,6 +143,7 @@ body {
 
 @media (min-width: 37.5em) {
   .product {
+    max-width: 37rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
