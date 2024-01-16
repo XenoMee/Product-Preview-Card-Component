@@ -141,7 +141,7 @@ body {
   gap: var(--content-spacing);
 }
 
-@media (min-width: 50em) {
+@media (min-width: 37.5em) {
   .product {
     display: grid;
     grid-template-columns: 1fr 1fr;
