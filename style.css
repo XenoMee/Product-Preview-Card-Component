@@ -74,10 +74,15 @@ body {
 }
 
 .product {
-  display: grid;
-  width: 20rem;
-  background-color: hsl(0, 0%, 100%);
+  --content-spacing: 1rem;
+  --content-padding: 1rem;
+
+  background-color: var(--clr-neutral-100);
   border-radius: 0.5rem;
+  overflow: hidden;
+
+  display: grid;
+  gap: var(--content-spacing);
 }
 
 .product__image {
