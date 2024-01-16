@@ -67,20 +67,10 @@ body {
   font-family: var(--ff-base);
   font-weight: var(--fw-regular);
   line-height: 1.5;
-}
 
-.body-card-category,
-.body-card-text,
-.body-card-discount-text,
-.body-card-cart-button {
-  font-family: "Montserrat", sans-serif;
-  color: hsl(228, 12%, 48%);
-}
-
-.content {
   min-height: 100svh;
   display: grid;
-  place-items: center;
+  place-content: center;
 }
 
 .product {
