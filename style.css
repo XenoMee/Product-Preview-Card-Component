@@ -113,18 +113,13 @@ body {
 }
 
 .btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
+  display: inline-block;
   padding: 0.6rem;
-  background-color: hsl(158, 36%, 37%);
-  color: white;
+  background-color: var(--clr-primary-600);
+  color: var(--clr-neutral-100);
   text-align: center;
-  font-weight: 700;
-  text-decoration: none;
+  font-weight: var(--fw-bold);
   border-radius: 0.5rem;
-  margin-bottom: 0.5rem;
 }
 
 /* Utility classes */
