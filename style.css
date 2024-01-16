@@ -25,26 +25,26 @@ body {
   place-items: center;
 }
 
-.card {
+.product {
   display: grid;
   width: 20rem;
   background-color: hsl(0, 0%, 100%);
   border-radius: 0.5rem;
 }
 
-.main-image {
+.product__image {
   max-width: 100%;
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
   object-fit: cover;
 }
 
-.body-card {
+.product__content {
   padding: 1rem 1.5rem;
   text-align: start;
 }
 
-.body-card-category {
+.product__category {
   text-transform: uppercase;
   letter-spacing: 0.3rem;
   font-size: 0.8rem;
@@ -55,17 +55,17 @@ body {
   font-family: "Fraunces", serif;
 }
 
-.body-card-name {
+.product__title {
   color: hsl(212, 21%, 14%);
   font-size: 1.6rem;
   line-height: 1;
 }
 
-.body-card-text {
+.product__subtitle {
   font-size: 0.81rem;
 }
 
-.body-card-price {
+.has-flex {
   display: flex;
   justify-content: start;
   align-items: center;
@@ -73,18 +73,18 @@ body {
   margin-bottom: 1rem;
 }
 
-.body-card-price-text {
+.product__price {
   color: hsl(158, 36%, 37%);
   font-size: 2rem;
 }
 
-.body-card-discount-text {
+.product__original-price {
   font-size: 0.8rem;
   text-decoration: line-through;
   margin-bottom: 0;
 }
 
-.body-card-cart-button {
+.btn {
   display: flex;
   justify-content: center;
   align-items: center;
