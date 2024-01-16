@@ -131,6 +131,7 @@ body {
 .button[data-icon="shopping-cart"]:before {
   content: "";
   background-image: url("./images/icon-cart.svg");
+  background-size: 1rem;
   width: 0.9375rem;
   height: 1rem;
 }
