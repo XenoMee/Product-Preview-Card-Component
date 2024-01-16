@@ -150,3 +150,12 @@ body {
   white-space: nowrap;
   width: 1px;
 }
+
+@media (min-width: 37.5em) {
+  .product {
+    --content-padding: 2rem;
+    max-width: 37.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
