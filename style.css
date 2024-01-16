@@ -112,19 +112,20 @@ body {
   font-size: 2rem;
 }
 
-.btn {
+.button {
   display: inline-block;
   padding: 0.6rem;
   background-color: var(--clr-primary-600);
   color: var(--clr-neutral-100);
   text-align: center;
   font-weight: var(--fw-bold);
+  border: none;
   border-radius: 0.5rem;
 }
 
 /* Utility classes */
 .has-flex {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: var(--content-spacing);
 }
