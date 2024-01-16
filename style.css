@@ -93,8 +93,7 @@ body {
 
 .product__category {
   text-transform: uppercase;
-  letter-spacing: 0.3rem;
-  font-size: 0.8rem;
+  letter-spacing: 4px;
 }
 
 .body-card-name,
