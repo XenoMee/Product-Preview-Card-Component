@@ -112,12 +112,6 @@ body {
   font-size: 2rem;
 }
 
-.product__original-price {
-  font-size: 0.8rem;
-  text-decoration: line-through;
-  margin-bottom: 0;
-}
-
 .btn {
   display: flex;
   justify-content: center;
