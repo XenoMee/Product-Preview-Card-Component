@@ -108,10 +108,8 @@ body {
 
 .has-flex {
   display: flex;
-  justify-content: start;
   align-items: center;
-  gap: 1rem;
-  margin-bottom: 1rem;
+  gap: var(--content-spacing);
 }
 
 .product__price {
