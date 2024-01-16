@@ -14,12 +14,14 @@
   --fw-bold: 700;
 }
 
+/* Intuitive box-sizing model */
 *,
 *::after,
 *::before {
   box-sizing: border-box;
 }
 
+/* Remove default margins */
 * {
   margin: 0;
 }
@@ -31,6 +33,7 @@ textarea {
   font: inherit;
 }
 
+/* Avoid text overflowing */
 p,
 h1,
 h2,
@@ -41,11 +44,13 @@ h6 {
   overflow-wrap: break-word;
 }
 
+/* Reduce line-height for large text */
 h1,
 h2 {
   line-height: 1.1;
 }
 
+/* Make images responsive */
 img,
 picture,
 video,
@@ -54,8 +59,13 @@ svg {
   display: block;
 }
 
+/* General styling */
 body {
-  background-color: hsl(30, 38%, 92%);
+  background-color: var(--clr-primary-200);
+  color: var(--clr-neutral-700);
+  font-size: var(--fs-default);
+  font-family: var(--ff-base);
+  font-weight: var(--fw-regular);
   line-height: 1.5;
 }
 
