@@ -107,7 +107,8 @@ body {
 }
 
 .product__price {
-  color: hsl(158, 36%, 37%);
+  color: var(--clr-primary-600);
+  font-family: var(--ff-accent);
   font-size: 2rem;
 }
 
