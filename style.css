@@ -90,6 +90,9 @@ body {
 .product__content {
   padding: var(--content-padding);
   text-align: start;
+
+  display: grid;
+  gap: var(--content-spacing);
 }
 
 .product__category {
@@ -101,10 +104,6 @@ body {
   color: var(--clr-neutral-900);
   font-size: var(--fs-title);
   font-family: var(--ff-accent);
-}
-
-.product__subtitle {
-  font-size: 0.81rem;
 }
 
 .has-flex {
