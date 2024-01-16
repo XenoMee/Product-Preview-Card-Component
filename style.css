@@ -121,6 +121,7 @@ body {
   font-weight: var(--fw-bold);
   border: none;
   border-radius: 0.5rem;
+  cursor: pointer;
 
   display: inline-flex;
   justify-content: center;
